@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Rock Fan-Page</title>
+  </head>
+  <body>
+    <!--
+    The three sematic tags that must be on every page you create are header, main, footer. 
+    Note the below comment is how  a multi-line comment should be written.
+
+    Most sematic tags are containers. Bad practice to not include an HTML element that goes inside the container.
+    The exception is <figcaption>.
+    State what type of conetnt you want to put in the container. 
+    They need actual HTML elemnets inside them.
+    Just putting text inside a fotter without a p tag or an h2 tag is not acceptable. 
+
+    Never use a <span> that spands over the entire content.
+    -->
+    <header>
+      <h1>Classic Rock Fan Page</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="the-beatles.html">The Beatles</a></li>
+          <li><a href="eric-clapton.html">Eric Clapton</a></li>
+          <li><a href="kiss.html">KISS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--
+        We create sections for areas of related content.
+      -->
+      <section>
+        <!--Inside sematic tags, we can use divs to further group content.-->
+        <div>
+          <!--
+            Never add a span to warp around all teh content of an element.
+            A <div> should never have only one lement in it.
+            A <div> should never be used in an empty container.
+          -->
+          <h2>What is Classic Rock?</h2>
+          <p>
+            "<span id="definition">Classic Rock</span> is a US radio fromat
+            developed from the album-oriented rock (AOR) format in the early
+            1980s.In the United States, the classic rock format comprises rock
+            music ranging generally from the mid-1960s through the mid 1990s,
+            primarily focusing on commercially successful blues rock and hard
+            rock popularized in the 1970s AOR format. The radio format became
+            increasingly popular with the baby boomer demographic by the end of
+            the 1990s."
+            <a
+              href="https://en.wikipedia.org/wiki/Classic_rock"
+              target="_blank">
+              - Wikipedia
+            </a>
+          </p>
+        </div>
+        <figure>
+          <figcaption>
+            The image below is an image of influencial, classic rock musicians:
+            (starting from the left)
+            <span class="musician-name">Keith Richards</span>,
+            <span class="musician-name">Steven Tyler</span>,
+            <span class="musician-name">Angus Young</span> and
+            <span class="musician-name">Jimmy Page</span>.
+          </figcaption>
+          <img
+            src="images/influencial-rockers.jpg"
+            alt="An image of four influencial classic rock musicians. 
+              The image is split into four vertical sections. The first section is of Keith Richards, from the 
+              Rolling Stones. the second section is of Steven Tyler from Aerosmith. The third section is of Angus Young from Ac/DOC.
+              The fourth section is of Jimmy Page from Led Zeppelin." />
+        </figure>
+      </section>
+    </main>
+    <!--
+      Don't add a <div> that has only one lement in it. 
+      Only add the <div> when there are things outside the container as well. 
+    -->
+    <footer>
+      <!--
+      This is the correct way to put content inside the container.
+      This is the correct way to use text-decoration tags. 
+      <p> is a content tag. It is  a pargraph.
+      Small tag just tells you how I want to style that text. 
+      -->
+      <p>
+        <small>&#169; Daria P.</small>
+      </p>
+    </footer>
+  </body>
+</html>

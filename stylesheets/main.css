@@ -17,11 +17,19 @@ html {
   font-size: 62.5%;
 }
 /* 
+  This styles the body element to have a background color of #121212,
+  which will be th emain background color for the entire website.
   This will style the body elemnet and all elements that inherit from the body styling 
-  to chnage their font size to 1.8times the size f the root elemnet's font size.
+  to change their font color to #ededed, which is an off-white, the font size
+  to 1.8times the size f the root elemnet's font size, and to use the Arial font before using the 
+  Helvetica font. 
+  If neither font is available, the browser will use the deafault sans-serif font. 
 */
 body {
+  background-color: #121212;
+  color: #ededed;
   font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*
   This styles the section that holds all of my important information to have no 

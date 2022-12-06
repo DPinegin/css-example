@@ -16,8 +16,15 @@
 html {
   font-size: 62.5%;
 }
+/* 
+  This will style the body elemnet and all elements that inherit from the body styling 
+  to chnage their font size to 1.8times the size f the root elemnet's font size.
+*/
+body {
+  font-size: 1.8rem;
+}
 /*
-  This styles the section that holds all of my important infrmation to have no 
+  This styles the section that holds all of my important information to have no 
   spacing on the top and bottom of the section, and spacing that is equal 
   to 5% of the width of teh browser window of the left
   and right sides of the scetion. 

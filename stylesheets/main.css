@@ -31,11 +31,83 @@ body {
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 
+  This styles the nav elemnt to have a background color of #800808, which is dark red.
+
+*/
+nav {
+  background-color: #800808;
+}
+
+/* 
+  This styles the unordered list inside the nav to have no space on the 
+  inside of the element to have no bullet points fo rthe list items.
+*/
+nav ul {
+  padding: 0;
+
+  list-style: none;
+}
+/* 
+  This styles all the list items in the nav to dipslay 
+  beside each-other, but also allow for chnages to their 
+  dimensions, and add 5px of space on the top and bottom of the list items. 
+*/
+nav li {
+  display: inline-block;
+
+  margin: 5px 0;
+}
+
+/* 
+  This styles all the anchors inside the nav to display beside
+  each other, but also allows for chnages to their dimensions.
+  For example, it allows to change the heightr of the anchors 
+  so that they are 100% of teh size of the parent element,
+  the list items in the nav. 
+  This styling also adds 15px of space on teh inside of the element
+  just above and below the content and 25px on the inside of teh element
+  just to the left and right of teh content. 
+  This styling makes the background color of the anchors to be dark
+  gray (#121212) and the font color to be an off-white (#ededed)..
+  Lastly, the elements will not have an underline. 
+*/
+nav a {
+  display: inline-block;
+  height: 100%;
+
+  padding: 15px 25px;
+
+  background-color: #121212;
+  color: #ededed;
+
+  text-decoration: none;
+}
+/* 
+  This styles the anchor element i the nav so that when a user hovers 
+  on or to the links, the colors of the anchor swap out. This means 
+  the background color will be an off-white and the font color will be 
+  a dark gray. 
+*/
+nav a:hover,
+nav a:focus {
+  background-color: #ededed;
+  color: #121212;
+}
+/* 
+  This styles the anchor elements in the nav so that when a user clicks and holds
+  on the anchor, the font becomes heavily bolded. 
+*/
+nav a:active {
+  font-weight: bolder;
+}
+
 /*
   This styles the section that holds all of my important information to have no 
   spacing on the top and bottom of the section, and spacing that is equal 
   to 5% of the width of teh browser window of the left
-  and right sides of the scetion. 
+  and right sides of the section. 
 */
 main {
   margin: 0 5%;
